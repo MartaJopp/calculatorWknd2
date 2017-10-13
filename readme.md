@@ -1,7 +1,10 @@
 - [x] Create files and do basic setup 
-- [ ] Source Files
+- [x] Source Files
+- [x] Setup server static files with port 5000 and test server
+- [x] Server listening
+- [x] Check local host
 - [ ] Get basic html set up
-[ ] POST SIDE
-[ ] req. body
-[ ] GET
-[ ] Send
+- [ ] POST SIDE
+- [ ] req. body
+- [ ] GET
+- [ ] Send

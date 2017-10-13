@@ -1,4 +1,4 @@
-[ ] Create files and do basic setup 
+- [x] Create files and do basic setup 
 [ ] Source Files
 [ ] Get basic html set up
 [ ] POST SIDE

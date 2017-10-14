@@ -4,7 +4,12 @@
 - [x] Server listening
 - [x] Check local host
 - [x] Get basic html page set up
-- [ ] POST SIDE
+- [ ] client JS - start with just add function
+- [x] document ready now, ensure jquery sourced, click handler for add button
+- [x] check to make sure receiving input fields, declare global variables input1 & input2
+- [x] object constructor to turn into object and post through ajax
+- [x] ajax - POST 
+- [x] .done and .fail (message responses) - console.log
 - [ ] req. body
 - [ ] GET
 - [ ] Send

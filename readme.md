@@ -15,4 +15,5 @@
 - [x] append addition result to DOM
 - [x] subtraction complete
 - [x] multiply complete
-- [ ] divide complete
+- [x] divide complete
+- [] clear button - clear field and result

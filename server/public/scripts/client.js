@@ -11,6 +11,7 @@ function readyNow(){
     $('#subtract').on('click', subtractThis); // when the subtract button is clicked - run subtractThis fx
     $('#divide').on('click', divideThis); // when the divide button is clicked - run divideThis fx
     $('#multiply').on('click', multiplyThis) // when multiply is clicked - run multiplyThis fx
+    $('#clear').on('click', clearAll); // when clear is clicked - fields and result will clear
 } // end readyNow function
 
 //-----------------------------------START ADDITION BUTTON-------------------------------------------------
@@ -141,3 +142,9 @@ function divideThis(){
             $('#secondNumberInput').val('');
         })
     } //end divideResult function
+    //---------------------------------CLEAR---------------------------------
+    function clearAll(){
+        console.log('clear clicked');
+        $('.fields').val('');
+        $('#result').text('');
+    }

@@ -36,3 +36,29 @@ app.post('/addition', function(req, res){
 app.get('/addition', function(req,res){
     res.send({result: additionResult}); // send the number as an object
 })
+// Subtraction POST route
+app.post('/subtraction', function(req, res){
+    console.log(req.body); //the object of numbers received
+    res.sendStatus(201);
+    firstNumber = parseInt(req.body.input1);
+    secondNumber = parseInt(req.body.input2);
+    subtractionResult = firstNumber - secondNumber; // need to think about negative number...actually negative works!
+    console.log(subtractionResult);
+    console.log(firstNumber, secondNumber)
+}); // end subtratction POST route
+// subtraction GET
+app.get('/subtraction', function(req, res){
+    res.send({result: subtractionResult}); // send the subtraction result as a number
+})
+// corresponding multiply POST route
+app.post('/multiply', function(req, res){
+    res.sendStatus(201);
+    firstNumber = parseInt(req.body.input1); //req.body is the data that was received - taking the property input1
+    secondNumber = parseInt(req.body.input2); //taking the property input2 from the data
+    multiplyResult = (firstNumber * secondNumber);
+    console.log(multiplyResult);
+}); //end multiply POST route
+// multiply GET request
+app.get('/multiply', function(req, res){
+    res.send({result: multiplyResult})
+})

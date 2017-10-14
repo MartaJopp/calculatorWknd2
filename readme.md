@@ -13,4 +13,6 @@
 - [x] req. body
 - [x] GET
 - [x] append addition result to DOM
-- [ ]
+- [x] subtraction complete
+- [x] multiply complete
+- [ ] divide complete

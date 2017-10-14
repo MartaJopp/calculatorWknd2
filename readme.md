@@ -3,7 +3,7 @@
 - [x] Setup server static files with port 5000 and test server
 - [x] Server listening
 - [x] Check local host
-- [ ] Get basic html set up
+- [x] Get basic html page set up
 - [ ] POST SIDE
 - [ ] req. body
 - [ ] GET

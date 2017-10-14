@@ -115,16 +115,29 @@ function multiplyResult(){
 //-------------------------------DIVIDE------------------------------
 function divideThis(){
     console.log('Divide Clicked'); //divide button connected
-    var numbersToCalculate {
-        input1: ('#firstNumberInput').val();
-        input2: ('#secondNumberInput').val();
+    var numbersToCalculate = {
+        input1: $('#firstNumberInput').val(),
+        input2: $('#secondNumberInput').val()
     } //end object constructor
     $.ajax({
         method: 'POST',
         url: 'divide',
         data: numbersToCalculate
     }).done (function(response){
-        console.log(resposne);
-    }).fail(function(message))
-    }
-}
+        console.log(response);
+        divideResult();
+    }).fail(function(message){
+        console.log('Error', message);
+    })
+    }// end divideThis function
+    function divideResult(){
+        $.ajax({
+            method: 'GET',
+            url: '/divide' 
+        }).done(function(response){
+            var divideToDisplay = response;
+            $('#result').text(divideToDisplay.result); //append the number property to the DOM
+            $('#firstNumberInput').val('');
+            $('#secondNumberInput').val('');
+        })
+    } //end divideResult function

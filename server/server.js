@@ -61,4 +61,16 @@ app.post('/multiply', function(req, res){
 // multiply GET request
 app.get('/multiply', function(req, res){
     res.send({result: multiplyResult})
-})
+})//end multiply GET route
+//corresponding dividsion POST route
+app.post('/divide', function (req, res){
+    res.sendStatus(201);
+    firstNumber = parseInt(req.body.input1);
+    secondNumber = parseInt(req.body.input2);
+    divideResult = (firstNumber / secondNumber);
+    console.log(divideResult);
+}); // end divide POST route
+// divide GET request
+app.get('/divide', function(req, res){
+    res.send({result: divideResult})
+})// end divide GET route

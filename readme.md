@@ -16,4 +16,5 @@
 - [x] subtraction complete
 - [x] multiply complete
 - [x] divide complete
-- [] clear button - clear field and result
+- [x] clear button - clear field and result
+- [x] style 
